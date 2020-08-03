@@ -1,0 +1,11 @@
+{
+    "folders": [
+		{
+			"name": "fcc-choropleth",
+			"path": "."
+		}
+	],
+    "settings": {
+        "liveServer.settings.multiRootWorkspaceName": "fcc-choropleth"
+    }
+}
