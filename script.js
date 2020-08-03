@@ -3,12 +3,12 @@ let educationData;
 
 const canvas = d3.select('#canvas');
 
-d3.json('/data/counties.json').then((data, error) => {
+d3.json('https://cdn.freecodecamp.org/testable-projects-fcc/data/choropleth_map/counties.json').then((data, error) => {
 	if (error) {
 		console.log(error);
 	} else {
 		countyData = topojson.feature(data, data.objects.counties).features;
-		d3.json('/data/for_user_education.json').then((data, error) => {
+		d3.json('https://cdn.freecodecamp.org/testable-projects-fcc/data/choropleth_map/for_user_education.json').then((data, error) => {
 			if (error) {
 				console.log(error);
 			} else {
